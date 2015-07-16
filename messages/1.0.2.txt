@@ -1,0 +1,26 @@
+=================================
+UnrealScript IDE has been updated
+=================================
+
+New Stuff:
+----------
+
+* **Performance increase**
+	* This comes with a downside of performance decrease at the very first startup, but after that it will be much faster
+	* I'm saving a list of all classes to a cache file at startup, so that I can later load the classes from it.
+	  
+	  PLEASE NOTE: If you create new class files, modify the file name of your class or modify what your class extends
+		you'll have to delete the cache file to rebuild the class list (and restart Sublime). The cache file is in your Src directory and is named: classes_cache.obj
+
+* **Classes auto-completion**
+	* classes do now also appear in the completions list.
+	* especially helpful in the class declaration line when you are thinking about what class to extend.
+
+* **Object-oriented go to declaration support**
+	* e.g. activating goto declaration over controller.GetPlayerViewPoint(a, b) will take you to the declaration of GetPlayerViewPoint in Controller
+	* typecasting is not yet supported.
+
+Object-oriented Auto-completion is coming soon!!!
+----------
+
+For an in detail explanation, read the wiki: https://github.com/Zinggi/UnrealScriptIDE/wiki

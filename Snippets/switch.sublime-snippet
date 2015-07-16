@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+switch (${1:expression})
+{
+	case ${2:expression2}:
+		$3
+		break;
+
+	case ${4:expression3}:
+		$5
+
+	default:
+		$6
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>switch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.uc</scope>
+  <description>Snippet - switch</description>
+</snippet>

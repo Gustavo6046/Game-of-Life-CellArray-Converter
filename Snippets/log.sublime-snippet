@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+`log(${1:String or variable})]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>log</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.uc</scope>
+	<description>Snippet - log</description>
+</snippet>
