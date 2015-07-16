@@ -8,6 +8,12 @@ var cell C3;
 var cell C4;
 var truecells T;
 var falsecells F;
+var string Discoverer;
+var int DiscoverYear;
+var int TopLeftX;
+var int TopLeftY;
+var int SizeX;
+var int SizeY;
 
 struct Cell
 {
@@ -28,6 +34,12 @@ struct Pattern
 {
 	var truecells T;
 	var falsecels F;
+	var string Discoverer;
+	var int DiscoverYear;
+	var int TopLeftX;
+	var int TopLeftY;
+	var int SizeX;
+	var int SizeY;
 };
 
 public function GetCellArray (truecells A, falsecells B)
