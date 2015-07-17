@@ -6,6 +6,7 @@ var cell C1;
 var cell C2;
 var cell C3;
 var cell C4;
+var cell C5, C6, C7, C8, C9, C10, C11, C12;
 var truecells T;
 var falsecells F;
 var string Discoverer;
@@ -14,6 +15,17 @@ var int TopLeftX;
 var int TopLeftY;
 var int SizeX;
 var int SizeY;
+var int OffsetX;
+var int OffsetY;
+var protected int BLY;
+var name EURL;
+var name ENick;
+var name EEnd;
+
+struct Email
+{
+	var name EURL, ENick, EEnd;	
+};
 
 struct Cell
 {
@@ -22,48 +34,31 @@ struct Cell
 
 struct Truecells
 {
-	var cell C1, C2, C3, C4;
+	var cell C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12;
 };
 
 struct Falsecells
 {
-	var cell C1, C2, C3, C4;
+	var cell C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12;
 };
 
 struct Pattern
 {
 	var truecells T;
-	var falsecels F;
+	var optional falsecells F;
 	var string Discoverer;
 	var int DiscoverYear;
+	var email DiscovererEmail;
 	var int TopLeftX;
 	var int TopLeftY;
 	var int SizeX;
 	var int SizeY;
+	var int BLY;
+	var int OffsetX;
+	var int OffsetY;
+	var int PositionX;
+	var int PositionY;
+	BLY = TopLeftY - SizeY;
+	PositionX = SizeX + OffsetX;
+	PositionY = SizeY + OffsetY;
 };
-
-public function GetCellArray (truecells A, falsecells B)
-{
-	C.Truecells = A;
-	C.Falsecells = B;
-	return C;
-}
-public function GetCellList (cell Z, cell Y, cell X, cell W, bool bTrueCells)
-{
-	if(bTrueCells)
-	{
-		V.C1 = Z;
-		V.C2 = Y;
-		V.C3 = X;
-		V.C4 = W;
-		return V;
-	}
-	else
-	{
-		U.C1 = Z;
-		U.C2 = Y;
-		U.C3 = X;
-		U.C4 = W;
-		return U;
-	}
-}
